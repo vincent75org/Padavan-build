@@ -69,6 +69,31 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' .config #删除配置项阿里DDNS
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SMARTDNS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_LANG_UK/d' config      #删除配置项英文界面
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' config          #删除配置项QOS
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SMBD36/d' config       #删除配置项SMBD36
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DDNS_SSL/d' config     #删除配置项DDNS_SSL
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_HTTPS/d' config        #删除配置项HTTPS
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' config      #删除配置项OPENVPN
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' config   #删除配置项FFMPEG_NEW
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' config       #删除配置项XUPNPD
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d' config       #删除配置项DOGCOM
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_VLMCSD/d' config       #删除配置项VLMCSD
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_TTYD/d' config         #删除配置项TTYD
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NAPT66/d' config       #删除配置项NAPT66
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOCAT/d' config        #删除配置项SOCAT
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_MTR/d' config          #删除配置项MTR
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_IPERF3/d' config      #删除配置项IPERF3
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d' config         #删除配置项NANO
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_HTOP/d' config         #删除配置项HTOP
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_LRZSZ/d' config        #删除配置项LRZSZ
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' config         #删除配置项CURL
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH/d' config      #删除配置项OPENSSH
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SFTP/d' config         #删除配置项SFTP
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_TCPDUMP/d' config      #删除配置项TCPDUMP
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_EAP_PEAP/d' config     #删除配置项EAP_PEAP
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC/d' config   #删除配置项OPENSSL_EC
+        sed -i '/CONFIG_FIRMWARE_CPU_900MHZ/d' config           #删除配置项超频900MHz
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         ##########################################CPU超频###############################################################
         echo "CONFIG_FIRMWARE_INCLUDE_OC=y" >> $m.config #CPU超频开关
